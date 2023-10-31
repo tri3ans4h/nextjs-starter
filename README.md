@@ -1,17 +1,8 @@
 
 ## Getting Started
-
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+1. Install Backend https://github.com/tri3ans4h/nestjs-starter
+2. Dont forget edit .env.local to .env
+3. Start npm run dev  
 
 ## REFERENCE
 https://github.com/hqasmei/youtube-tutorials/blob/main/vercel-animated-tabs/src/components/tabs.tsx  
