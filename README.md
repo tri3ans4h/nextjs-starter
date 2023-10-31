@@ -1,6 +1,6 @@
 
 ## Getting Started
-1. Install Backend https://github.com/tri3ans4h/nestjs-starter
+1. Install Backend https://github.com/tri3ans4h/nestjs-starter  see instalation guide
 2. Dont forget edit .env.local to .env
 3. Start npm run dev  
 
