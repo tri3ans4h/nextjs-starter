@@ -23,31 +23,34 @@ export default function useValidate() {
     const dataMe = await resMe.json()
     if (resMe.status == 200) {
       //setUserProfile(dataMe)
-      console.log(dataMe.UserProfile)
+
       dispatch({
         type: 'set-user', payload: {
           id: dataMe.id,
-          name: dataMe.UserProfile?.firstName + ' ' + dataMe.UserProfile?.lastName,
-          first_name: dataMe.UserProfile?.firstName,
-          last_name: dataMe.UserProfile?.lastName,
+          name: dataMe.UserProfile ? dataMe.UserProfile.firstName + ' ' + dataMe.UserProfile.lastName : "",
+          first_name: dataMe.UserProfile ? dataMe.UserProfile.firstName : "",
+          last_name: dataMe.UserProfile ? dataMe.UserProfile.lastName : "",
           photo: dataMe.photo,
           email: dataMe.email,
-          birth_date: dataMe.UserProfile?.birthDate,
-          phone: dataMe.UserProfile?.phone,
+          birth_date: dataMe.UserProfile ? dataMe.UserProfile.birthDate : "",
+          phone: dataMe.UserProfile ? dataMe.UserProfile.phone : "",
         }
       });
-
+      //if (dataMe.UserProfile) {
       dispatch({
-        type: 'setProfile', payload: dataMe.UserProfile
+        type: 'setProfile', payload: dataMe.UserProfile ? dataMe.UserProfile : {}
       });
-
-      dispatch({
-        type: 'setUserActivity', payload: dataMe.UserActivity
-      });
-
-      dispatch({
-        type: 'setSecurityUserActivity', payload: dataMe.securityUserActivity
-      });
+      //}
+      if (dataMe.UserActivity) {
+        dispatch({
+          type: 'setUserActivity', payload: dataMe.UserActivity
+        });
+      }
+      if (dataMe.securityUserActivity) {
+        dispatch({
+          type: 'setSecurityUserActivity', payload: dataMe.securityUserActivity
+        });
+      }
       //alert( dataMe.first_name )
       dispatch({ type: 'setLogin', payload: true });
       //setIsLogged(true)

@@ -140,12 +140,12 @@ export default function ChangeProfilePage() {
               <div className="mt-6 w-full text-xs flex-col">
                 <Formik<ProfileFormInputs>
                   initialValues={{
-                    firstName: state.profile?.firstName,
-                    lastName: state.profile?.lastName,
-                    email: state.profile?.email,
-                    address: state.profile?.address,
-                    phone: state.profile?.phone,
-                    birthDate: state.profile?.birthDate
+                    firstName: state.profile.firstName,
+                    lastName: state.profile.lastName,
+                    email: state.profile.email,
+                    address: state.profile.address,
+                    phone: state.profile.phone,
+                    birthDate: state.profile.birthDate
                   }}
                   onSubmit={async (values) => {
                     const response = await userService.updateProfile(state.user.id as unknown as string, {
