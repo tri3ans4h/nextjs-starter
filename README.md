@@ -25,6 +25,9 @@ https://locize.com/blog/next-13-app-dir-i18n/
 https://dev.to/derick1530/translate-website-content-using-nextjs-internationalization-and-next-i18next-1ghe  
 
 
+## BACKEND  
+https://github.com/tri3ans4h/nestjs-starter  
+
 ## License  
 MIT
 
