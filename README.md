@@ -13,7 +13,6 @@ pnpm dev
 bun dev
 ```
 
-
 ## REFERENCE
 https://github.com/hqasmei/youtube-tutorials/blob/main/vercel-animated-tabs/src/components/tabs.tsx  
 https://github.com/cruip/cruip-tutorials-next/tree/main/public  
@@ -31,13 +30,13 @@ https://github.com/tri3ans4h/nestjs-starter
 ## License  
 MIT
 
-
 ## DISCLAIMER  
 Not production ready yet, 
 
-
 ## FUTURE IMPROVEMENT  
-- add skeleton loader
-- 
+- add skeleton loader 
+
+## QUESTION??  
+this project only for fun, please do experiment by yourself  
 
 
