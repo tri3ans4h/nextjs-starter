@@ -26,7 +26,8 @@ Not production ready yet,
 
 ## FUTURE IMPROVEMENT  
 - add skeleton loader
-- internationalization 
+- internationalization
+- image optimizer see : https://tiny-img.com/blog/best-image-size-for-website/  
 
 ## QUESTION??  
 this project only for fun, please do experiment by yourself  
