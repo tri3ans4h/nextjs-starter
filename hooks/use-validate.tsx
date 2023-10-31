@@ -27,13 +27,13 @@ export default function useValidate() {
       dispatch({
         type: 'set-user', payload: {
           id: dataMe.id,
-          name: dataMe.UserProfile.firstName + ' ' + dataMe.UserProfile.lastName,
-          first_name: dataMe.UserProfile.firstName,
-          last_name: dataMe.UserProfile.lastName,
+          name: dataMe.UserProfile?.firstName + ' ' + dataMe.UserProfile?.lastName,
+          first_name: dataMe.UserProfile?.firstName,
+          last_name: dataMe.UserProfile?.lastName,
           photo: dataMe.photo,
           email: dataMe.email,
-          birth_date: dataMe.UserProfile.birthDate,
-          phone: dataMe.UserProfile.phone,
+          birth_date: dataMe.UserProfile?.birthDate,
+          phone: dataMe.UserProfile?.phone,
         }
       });
 
