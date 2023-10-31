@@ -205,7 +205,7 @@ export default function Tab1Page() {
             <div className="hover:bg-sky-100" onClick={hdlChange}>
               <div className="flex items-center mx-6 py-4 border-b-2 ">
                 <div className="basis-2/12"><span className=" text-sm">Name</span></div>
-                <div className="basis-8/12">{state.profile.firstName} {state.profile.lastName}</div>
+                <div className="basis-8/12">{state.profile?.firstName} {state.profile?.lastName}</div>
                 <div className="basis-1/12"></div>
                 <div className="basis-1/12">
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
@@ -217,7 +217,7 @@ export default function Tab1Page() {
             <div className="hover:bg-sky-100" onClick={hdlChange}>
               <div className="flex items-center mx-6 py-4 border-b-2 ">
                 <div className="basis-2/12"><span className=" text-sm">Birth Day</span></div>
-                <div className="basis-8/12">{(state.profile.birthDate instanceof Date ? "yes" : "no")}
+                <div className="basis-8/12">{(state.profile?.birthDate instanceof Date ? "yes" : "no")}
                   {/*state.profile.birthDate.toISOString()*/}
                 </div>
                 <div className="basis-1/12"></div>
@@ -255,7 +255,7 @@ export default function Tab1Page() {
             <div className="hover:bg-sky-100" onClick={hdlChange}>
               <div className="flex items-center mx-6 py-4 border-b-2 ">
                 <div className="basis-2/12"><span className=" text-sm">Email</span></div>
-                <div className="basis-8/12">{state.profile.email}</div>
+                <div className="basis-8/12">{state.profile?.email}</div>
                 <div className="basis-1/12"></div>
                 <div className="basis-1/12">
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
@@ -267,7 +267,7 @@ export default function Tab1Page() {
             <div className="hover:bg-sky-100">
               <div className="flex items-center mx-6 py-4 border-b-2 ">
                 <div className="basis-2/12"><span className=" text-sm">Phone</span></div>
-                <div className="basis-8/12">{state.profile.phone}</div>
+                <div className="basis-8/12">{state.profile?.phone}</div>
                 <div className="basis-1/12"></div>
                 <div className="basis-1/12">
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
@@ -280,7 +280,7 @@ export default function Tab1Page() {
             <div className="hover:bg-sky-100">
               <div className="flex items-center mx-6 py-4 border-b-2 ">
                 <div className="basis-2/12"><span className=" text-sm">Alamat</span></div>
-                <div className="basis-8/12">{state.profile.address}</div>
+                <div className="basis-8/12">{state.profile?.address}</div>
                 <div className="basis-1/12"></div>
                 <div className="basis-1/12">
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
