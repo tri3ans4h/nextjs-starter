@@ -25,7 +25,8 @@ MIT
 Not production ready yet, 
 
 ## FUTURE IMPROVEMENT  
-- add skeleton loader 
+- add skeleton loader
+- internationalization 
 
 ## QUESTION??  
 this project only for fun, please do experiment by yourself  
