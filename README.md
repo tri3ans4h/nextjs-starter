@@ -23,3 +23,18 @@ https://zenn.dev/tara_is_ok/articles/8c5f37d4597d99
 https://next-intl-docs.vercel.app/docs/getting-started/app-router-client-components  
 https://locize.com/blog/next-13-app-dir-i18n/  
 https://dev.to/derick1530/translate-website-content-using-nextjs-internationalization-and-next-i18next-1ghe  
+
+
+## License  
+MIT
+
+
+## DISCLAIMER  
+Not production ready yet, 
+
+
+## FUTURE IMPROVEMENT  
+- add skeleton loader
+- 
+
+
